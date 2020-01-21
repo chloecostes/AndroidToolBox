@@ -1,11 +1,13 @@
 package fr.isen.Costes.androidtoolbox
 
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 
-class CycleOfLife : AppCompatActivity() {
+class CycleOfLife : AppCompatActivity(), CycleOfLifeFragment.OnFragmentInteractionListener {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,8 +21,15 @@ class CycleOfLife : AppCompatActivity() {
     }
 
     override fun onDestroy() {
+        Toast.makeText(this,"cycle destroyed",Toast.LENGTH_LONG).show()
         super.onDestroy()
-        Toast.makeText(this,"cycle destroy",Toast.LENGTH_LONG).show()
-         Log.d("message","ok")
+   }
+
+
+    override fun onFragmentInteraction() {
+        Toast.makeText(this,"fragment destroyed",Toast.LENGTH_LONG).show()
     }
+
+
+
 }
