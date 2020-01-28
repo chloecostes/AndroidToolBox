@@ -6,12 +6,14 @@ import android.os.Bundle
 import android.util.Log
 import android.widget.Toast
 
-class CycleOfLife : AppCompatActivity(), CycleOfLifeFragment.OnFragmentInteractionListener {
-
+class CycleOfLife : AppCompatActivity(), OnFragmentListenerInteraction {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_cycle_of_life)
+
+        val firstFragment = CycleOfLifeFragment()
+    //    supportFragmentManager.beginTransaction().add(R.id.fragmentContainer, firstFragment).commit()
     }
 
     override fun onPause() {
@@ -25,11 +27,10 @@ class CycleOfLife : AppCompatActivity(), CycleOfLifeFragment.OnFragmentInteracti
         super.onDestroy()
    }
 
-
-    override fun onFragmentInteraction() {
-        Toast.makeText(this,"fragment destroyed",Toast.LENGTH_LONG).show()
+    override fun swipeFragment() {
+        val secondFragment = SecondFragment()
+        supportFragmentManager.beginTransaction().replace(R.id.fragmentContainer, secondFragment).commit()
     }
-
 
 
 }

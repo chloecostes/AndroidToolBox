@@ -4,4 +4,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="button_first_fragment">swipe to second</string>
+    <string name="button_logout">Log out</string>
+    <string name="home_save">sauvgarder</string>
+    <string name="fields_empty"></string>
+    <string name="InfoTitle">Accés aux informations Android</string>
+    <string name="InfoListe"></string>
 </resources>

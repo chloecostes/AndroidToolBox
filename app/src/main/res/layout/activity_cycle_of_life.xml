@@ -19,10 +19,16 @@
         app:layout_constraintVertical_bias="0.224" />
 
     <fragment
-        android:id="@+id/fragment"
+        android:id="@+id/fragmentContainer"
         android:name="fr.isen.Costes.androidtoolbox.CycleOfLifeFragment"
-        android:layout_width="144dp"
-        android:layout_height="110dp"
-        tools:layout_editor_absoluteX="151dp"
-        tools:layout_editor_absoluteY="285dp" />
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

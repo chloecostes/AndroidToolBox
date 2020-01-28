@@ -97,7 +97,7 @@
         app:srcCompat="?attr/colorPrimary" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/SaveButton"
         android:layout_width="76dp"
         android:layout_height="75dp"
         android:layout_marginStart="16dp"
@@ -145,4 +145,18 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.842"
         app:srcCompat="?attr/colorPrimary" />
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="160dp"
+        android:text="DECONNEXION"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.998"
+        tools:text="@string/button_logout" />
 </androidx.constraintlayout.widget.ConstraintLayout>
