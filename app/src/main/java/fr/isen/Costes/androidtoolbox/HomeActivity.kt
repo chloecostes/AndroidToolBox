@@ -23,6 +23,11 @@ class HomeActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        PermissionButton.setOnClickListener {
+            val intent = Intent(this, InformationActivity::class.java)
+            startActivity(intent)
+        }
+
 
         logoutButton.setOnClickListener {
             val userPref = getSharedPreferences(Constants.UserPreferencesName, Context.MODE_PRIVATE)

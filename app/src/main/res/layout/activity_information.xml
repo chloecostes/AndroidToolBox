@@ -10,7 +10,7 @@
         android:id="@+id/titreInfo"
         android:layout_width="359dp"
         android:layout_height="36dp"
-        android:text="TextView"
+        android:text="@string/InfoTitle"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,21 +21,39 @@
         tools:text="@string/InfoTitle" />
 
     <ImageButton
-        android:id="@+id/imageButton6"
+        android:id="@+id/pictureButton"
         android:layout_width="106dp"
         android:layout_height="88dp"
+        android:layout_marginTop="32dp"
         android:background="@android:drawable/ic_menu_camera"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.104"
+        app:layout_constraintHorizontal_bias="0.078"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.203" />
+        app:layout_constraintTop_toBottomOf="@+id/titreInfo" />
+
+    <TextView
+        android:id="@+id/InfoPosition"
+        android:layout_width="201dp"
+        android:layout_height="88dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/InfoPosition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titreInfo"
+        tools:text="@string/InfoPosition" />
 
     <ListView
+        android:id="@+id/listPerson"
         android:layout_width="409dp"
-        android:layout_height="512dp"
+        android:layout_height="521dp"
+        android:layout_marginTop="200dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
