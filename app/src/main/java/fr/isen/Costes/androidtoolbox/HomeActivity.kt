@@ -24,7 +24,7 @@ class HomeActivity : AppCompatActivity() {
         }
 
         PermissionButton.setOnClickListener {
-            val intent = Intent(this, InformationActivity::class.java)
+            val intent = Intent(this, PermissionActivity::class.java)
             startActivity(intent)
         }
 
