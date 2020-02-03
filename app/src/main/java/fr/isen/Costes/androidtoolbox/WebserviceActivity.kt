@@ -35,5 +35,5 @@ class WebserviceActivity : AppCompatActivity() {
         queue.add(req)
     }
 
-    
+
 }
