@@ -30,7 +30,6 @@ import java.io.File
 import java.security.acl.Permission
 import java.util.jar.Manifest
 
-
 class PermissionActivity : AppCompatActivity(), LocationListener {
 
     lateinit var locationManager: LocationManager
