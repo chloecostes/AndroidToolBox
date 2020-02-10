@@ -42,6 +42,9 @@ class WebserviceActivity : AppCompatActivity() {
                         person.gender = it.gender
                         person.fName = it.name?.first
                         person.lName = it.name?.last
+                        person.picture= it.picture
+                        person.email= it.email
+                        person.location = it.location
                         personList.add(person)
 
 

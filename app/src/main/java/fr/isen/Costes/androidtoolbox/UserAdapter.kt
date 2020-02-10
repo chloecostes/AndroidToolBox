@@ -1,11 +1,12 @@
 package fr.isen.Costes.androidtoolbox
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 import fr.isen.Costes.androidtoolbox.Models.UserModel
-import kotlinx.android.synthetic.main.recycler_view_contact_cell.view.*
 import kotlinx.android.synthetic.main.recycler_view_user_cell.view.*
 
 class UsersAdapter(val users: ArrayList<UserModel>): RecyclerView.Adapter<UsersAdapter.UserViewHolder>() {
@@ -21,11 +22,24 @@ class UsersAdapter(val users: ArrayList<UserModel>): RecyclerView.Adapter<UsersA
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
         val user = users[position]
         holder.bind(user)
+
+
     }
 
     class UserViewHolder(val view: View): RecyclerView.ViewHolder(view) {
         fun bind(user: UserModel) {
             view.userDisplayNameTextView.text = user.fName + " " + user.lName
+            view.userDisplayEmailTextView.text = user.email
+            view.userDisplayAdressTextView.text = user.location?.street?.name + " ," + user.location?.city
+            Picasso.get().load(user.picture?.thumbnail)
+                .resize(200,200)
+                .into(view.pictureOfUser)
+            Log.i("URL picture", user.picture?.large)
         }
+
+
+
     }
+
+
 }

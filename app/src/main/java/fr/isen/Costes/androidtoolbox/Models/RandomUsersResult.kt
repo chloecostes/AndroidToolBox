@@ -4,6 +4,7 @@ class RandomUserResult {
     var results: ArrayList<UserModel>? = null
 }
 
+/*
 class User (
     var gender: String? ,
     var name: Name?,
@@ -19,4 +20,4 @@ class Name (
 
 class Picture (
     var large: String?
-)
+)*/
