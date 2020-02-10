@@ -10,5 +10,6 @@
     <string name="fields_empty"></string>
     <string name="InfoTitle">Accés aux informations Android</string>
     <string name="InfoListe"></string>
+    <string name="nameWeb">Activité web service</string>
 
 </resources>

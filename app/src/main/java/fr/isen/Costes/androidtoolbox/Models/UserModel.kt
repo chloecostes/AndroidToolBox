@@ -6,4 +6,6 @@ class UserModel {
     var name: NameModel? = null
     var location: LocationModel? = null
     var picture: PictureModel? = null
+    var fName: String? = null
+    var lName: String? = null
 }
